@@ -62,7 +62,6 @@
     "mock": "node server/app.js",
     "s": "npm run mock & npm run dev"
   },
-  "homepage": ".",
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,mjs}"
