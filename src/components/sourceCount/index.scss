@@ -1,0 +1,72 @@
+/*
+ * @Author: funlee
+ * @Email: i@funlee.cn
+ * @Date: 2018-05-24 10:30:00
+ * @Description: 首页-情报来源-样式 
+ */
+.source-count{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin-top: 20px;
+  .list{
+    max-width: 340px;
+    border: 1px solid #54d6ff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 8px 40px;
+    width: 22%;
+    .list-name{
+      color: #fff;
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 0;
+    }
+    .foot{
+      display: flex;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      align-items: center;
+      .foot-icon{
+        width: 65px;
+        height: 65px;
+        display: inline-block;
+        margin-right: 10px;
+      }
+      .ky-icon{
+        background: url(./icon/ky-icon.png) no-repeat center;
+        background-size: auto 90%;
+      }
+      .hs-icon{
+        background: url(./icon/hs-icon.png) no-repeat center;
+        background-size: auto 90%;
+      }
+      .js-icon{
+        background: url(./icon/js-icon.png) no-repeat center;
+        background-size: auto 90%;
+      }
+      .rl-icon{
+        background: url(./icon/rl-icon.png) no-repeat center;
+        background-size: auto 90%;
+      }
+      .foot-text{
+        flex: 1;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        .total{
+          color: #fff;
+          font-size: 44px;
+          font-family: 'Teko-Bold';
+          text-align: center;
+          margin-bottom: 0;
+          &.active{
+            color: #a7a7a7;
+          }
+        }
+      }
+    }
+  }
+}

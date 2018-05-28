@@ -1,0 +1,41 @@
+/*
+ * @Author: funlee
+ * @Email: i@funlee.cn
+ * @Date: 2018-05-25 15:35:35
+ * @Description: 首页-热词分析-样式 
+ */
+ .hot-words{
+  width: 100%;
+  height: 440px;
+  .hot-chart{
+    display: flex;
+    width: 100%;
+    height: 340px;
+    margin-top: 20px;
+    .chart-control{
+      width: 100px;
+      padding-left: 10px;
+      li{
+        display: block;
+        text-align: center;
+        width: 100%;
+        font-size: 18px;
+        color: #777;
+        line-height: 36px;
+        background: #192059;
+        margin-bottom: 4px;
+        cursor: pointer;
+        &.active,
+        &:hover{
+          color: #fff;
+          background: linear-gradient(to right, #151d4a, #4cbde6);
+        }
+      }
+    }
+    >div{
+      flex: 1;
+      color: #fff;
+      
+    }
+  }
+}

@@ -1,0 +1,78 @@
+/*
+ * @Author: funlee
+ * @Email: i@funlee.cn
+ * @Date: 2018-05-25 11:46:03
+ * @Description: 全局样式
+ * 全局公用样式的 class 以 global 开头
+ */
+@import './variable.scss';
+#root {
+  display: flex;
+  transform-origin: 0px 0px 0px;
+  position: relative;
+  min-height: 100%;
+  min-width: 1200px;
+  width: 100%;
+  background: $bgcolor;
+}
+// 图表暂无数据文字提示
+.global-no-data {
+  font-weight: normal;
+  font-size: 16px;
+  color: #777;
+ @include center;
+}
+// 导出、生成报告等大按钮
+.global-emphasize-btn {
+  display: block;
+  cursor: pointer;
+  font-size: 20px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #333;
+  width: 120px;
+  background: linear-gradient(to right, #54d6ff, #1971ee);
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  &:hover {
+    color: normal;
+  }
+}
+// 首页-信息汇总页-小模块标题
+.global-collect-title{
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 48px;
+  border-bottom: 2px solid #1e3e73;
+  text-indent: 14px;
+}
+// 文章详情弹窗关闭按钮
+.global-close-btn{
+  color: #157ee0;
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  cursor: pointer;
+  &.iconfont{
+    font-size: 40px;
+    font-weight: bold;
+  }
+}
+// 文章详情-正文滚动条样式
+.global-article-scrollbar{
+  &::-webkit-scrollbar{
+    width: 4px;
+    height: 2px;
+  }
+  &::-webkit-scrollbar-thumb{
+    background: #1971ee;
+    border-radius: 20px;
+  }
+  &::-webkit-scrollbar-track{
+    background: #161239;
+    border-radius: 20px;
+  }
+}

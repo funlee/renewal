@@ -1,0 +1,17 @@
+/*
+ * @Author: funlee
+ * @Email: i@funlee.cn
+ * @Date: 2018-05-25 11:45:45
+ * @Description: CSS 样式变量 
+ */
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+$bgcolor: #161239;
+@mixin borderBg {
+  background: linear-gradient(to top, transparent 88px, #292e5a 90px), linear-gradient(to left, transparent 88px, #292e5a 90px);
+  background-size: 90px 90px;
+}

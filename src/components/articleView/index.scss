@@ -1,0 +1,53 @@
+/*
+ * @Author: funlee
+ * @Email: i@funlee.cn
+ * @Date: 2018-05-24 18:20:29
+ * @Description: 文章详情样式 
+ */
+ .article-view{
+  $paddingRight: 100px;
+  $contentPadding: 60px;
+  padding: 30px ($paddingRight - $contentPadding) 10px $paddingRight;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+  .article-title{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding-right: $contentPadding;
+    flex: none;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 0;
+  }
+  .article-info{
+    font-size: 20px;
+    margin-top: 20px;
+    padding-right: $contentPadding;
+    display: flex;
+    justify-content: space-between;
+    span{
+      color: #bcbaba;
+      font-size: 18px;
+    }
+    a{
+      color: #54d6ff;
+    }
+  }
+  .article-content{
+    margin-top: 40px;
+    overflow: auto;
+    flex: 1;
+    padding-right: $contentPadding;
+    p{
+      margin: 0;
+      line-height: 2;
+      font-size: 18px;
+      text-indent: 2em;
+      text-align: justify;
+      color: #fff;
+    }
+  }
+}

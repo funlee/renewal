@@ -1,0 +1,28 @@
+.content-modal{
+  .modal-inner{
+    background: #262c53;
+    border: 1px solid #151937;
+    box-shadow: 0px 0px 40px 30px rgba(21,25,55,.9);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 80%;
+    height: 85%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transform: translateX(-50%);
+  }
+  .close-btn{
+    color: #157ee0;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    .iconfont{
+      font-size: 40px;
+      font-weight: bold;
+    }
+    &:hover{
+      color: #fff;
+    }
+  }
+}

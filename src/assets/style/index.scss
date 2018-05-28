@@ -1,0 +1,22 @@
+// 加载重置样式
+@import './reset/index.scss';
+
+// 加载 iconfont
+@import './iconfont/iconfont.css';
+
+// 加载全局公用样式
+@import './global/index.scss';
+
+// Teko 字体
+@font-face {
+  font-family: 'Teko-Bold';
+  src: url(./teko/Teko-Bold.ttf);
+}
+@font-face {
+  font-family: 'Teko-Light';
+  src: url(./teko/Teko-Light.ttf);
+}
+@font-face {
+  font-family: 'Teko-Medium';
+  src: url(./teko/Teko-Medium.ttf);
+}

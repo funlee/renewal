@@ -1,0 +1,82 @@
+/*
+ * @Author: funlee
+ * @Email: i@funlee.cn
+ * @Date: 2018-05-24 16:55:27
+ * @Description: 首页-最新信息-样式 
+ */
+ .new-info{
+   width: 100%;
+   box-sizing: border-box;
+   padding: 10px;
+   overflow: hidden;
+   position: relative;
+   ul{
+     overflow: hidden;
+     box-sizing: border-box;
+     padding: 0 6px 0 12px;
+     display: flex;
+     flex-wrap: wrap;
+     margin-top: 20px;
+     li{
+       font-size: 16px;
+       color: #bfbfbf;
+       line-height: 30px;
+       white-space: nowrap;
+       width: 50%;
+       display: flex;
+       justify-content: flex-start;
+       &:nth-child(even) {
+         justify-content: flex-end;
+         span{
+           text-align: right;
+         }
+       }
+       &:hover{
+         color: #fff;
+       }
+       span{
+         width: 26%;
+         overflow: hidden;
+         white-space: nowrap;
+         text-overflow: ellipsis;
+         box-sizing: border-box;
+         padding: 0 24px 0 0;
+         line-height: 36px;
+         float: left;
+         &:first-child{
+           width: 40%;
+           text-align: left;
+           cursor: pointer;
+         }
+         &:nth-child(2){
+          text-align: center;
+         }
+         &:last-child{
+           width: 24%;
+           padding: 0;
+         }
+       }
+     }
+   }
+   .show-all{
+     display: flex;
+     justify-content: flex-end;
+     cursor: pointer;
+     text-align: right;
+     margin: 18px -4px 0 0;
+     position: absolute;
+     right: 0;
+     top: 0;
+     .iconfont{
+       font-size: 20px;
+       font-weight: bold;
+       vertical-align: middle;
+       color: #54d6ff;
+     }
+     a{
+       display: inline-block;
+       color: #fff;
+       font-size: 18px;
+     }
+   }
+ }

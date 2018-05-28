@@ -1,0 +1,98 @@
+/*
+ * @Author: funlee
+ * @Email: i@funlee.cn
+ * @Date: 2018-05-21 10:52:54
+ * @Description: 页面入口-样式 
+ */
+#root{
+  width: 100%;
+  min-height: 100%;
+}
+.wrap{
+  width: 100%;
+  min-height: 100%;
+  .head{
+    width: 82%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 16px;
+  }
+  nav{
+    .father-nav{
+      display: inline-block;
+      width: 120px;
+      position: relative;
+      height: 40px;
+      a{
+        display: block;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        white-space: nowrap;
+        color: #fff;
+        padding: 8px 0;
+        position: relative;
+        &:after{
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: -2px;
+          left: 50%;
+          width: 0;
+          height: 3px;
+          transition: all 0.5s ease-out 0s;
+        }
+        &.active,
+        &:hover{
+          &:after{
+            width: 100%;
+            left: 0;
+            background: linear-gradient(to right, #151d4a, #4cbde6, #151d4a);
+          }
+        }
+        
+      }
+      &:hover{
+        .child-nav{
+          display: block;
+        }
+      }
+      .child-nav{
+        position: absolute;
+        z-index: 1000;
+        top: 40px;
+        width: 100%;
+        display: none;
+        a{
+          background: #37335b;
+          font-weight: normal;
+          &:after,
+          &:before{
+            display: none;
+          }
+          &.active,
+          &:hover{
+            background: linear-gradient(to right, #4383ae, #2a57a7);
+          }
+        }
+      }
+    }
+  }
+  .user{
+    font-size: 18px;
+    color: #fff;
+    margin-left: 20px;
+    cursor: pointer;
+    span{
+      display: inline-block;
+      padding: 2px 6px;
+    }
+    .iconfont {
+      font-size: 24px;
+    }
+  }
+}
