@@ -1,0 +1,18 @@
+/*
+ * @Author: funlee
+ * @Email: i@funlee.cn
+ * @Date: 2018-05-25 13:43:31
+ * @Description: 首页-样式 
+ */
+.home {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+  .nav-wrap{
+    width: 82%;
+    margin: 0 auto;
+    position: relative;
+  }
+}

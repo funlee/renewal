@@ -9,7 +9,6 @@ import { HashRouter as Router, NavLink, Switch, Redirect, Route } from 'react-ro
 import './index.scss';
 
 import Home from '@/views/home';
-import Share from '@/views/share';
 import NotFound from '../notfound';
 
 class App extends Component {
@@ -40,13 +39,13 @@ class App extends Component {
             </nav>
             <div className="user">
               <span className="iconfont bbd-user"></span>
-              <span>funlee</span>
+              <span>Admin</span>
             </div>
           </div>
           <Switch>
             <Redirect exact from="/" to="/home" />
             <Route path="/home" component={Home} />
-            <Route path="/share" component={Share} />
+            <Route path="/share" component={NotFound} />
             <Route path="/null-1" component={NotFound} />
             <Route path="/null-2" component={NotFound} />
             <Route path="/null-3" component={NotFound} />
