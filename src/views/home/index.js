@@ -1,20 +1,18 @@
 import React from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
 import './index.scss';
 
-import Collect from './collect';
-import NotFound from '@/components/notfound';
+import { view as SelectorTime } from './selectorTime';
+import { view as SourceCount } from './sourceCount';
 
 const Home = () => {
   return (
     <div className="home">
       <div className="nav-wrap">
-        <div className="nav-wrap">
-          <Switch>
-            <Redirect exact from="/home" to="/home/collect" />
-            <Route exact path="/home/collect" component={Collect} />
-            <Route exact path="/home/project" component={NotFound} />
-          </Switch>
+        <div className="collect">
+          <div className="top">
+            <SelectorTime />
+          </div>
+          <SourceCount />
         </div>
       </div>
     </div>

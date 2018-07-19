@@ -1,7 +1,7 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunkMiddleware from 'redux-thunk'
-import { reducer as selectorTimeReducer } from '../views/home/collect/selectorTime';
-import { reducer as sourceCountReducer } from '../views/home/collect/sourceCount';
+import { reducer as selectorTimeReducer } from '../views/home/selectorTime';
+import { reducer as sourceCountReducer } from '../views/home/sourceCount';
 
 const reducer = combineReducers({
   selectorTime: selectorTimeReducer,

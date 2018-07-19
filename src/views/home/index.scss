@@ -4,15 +4,73 @@
  * @Date: 2018-05-25 13:43:31
  * @Description: 首页-样式 
  */
+
 .home {
   width: 100%;
   display: flex;
   margin-top: 20px;
   position: relative;
   z-index: 1;
-  .nav-wrap{
+  .nav-wrap {
     width: 82%;
     margin: 0 auto;
     position: relative;
+    .collect {
+      position: relative;
+      padding-bottom: 80px;
+      .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .control-btn {
+          display: flex;
+          align-items: center;
+          .time-item {
+            display: inline-block;
+            font-size: 16px;
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 10px;
+            padding: 0 10px;
+            line-height: 22px;
+            margin: 0 6px;
+            &.active,
+            &:hover {
+              background: linear-gradient(to right, #1e7aef, #51d1fe);
+            }
+          }
+          .time-picker {
+            border: 1px solid #54d6ff;
+            border-radius: 20px;
+            padding: 0 6px;
+            position: relative;
+            color: #fff;
+            width: 280px;
+            &.active {
+              background: linear-gradient(to right, #1e7aef, #51d1fe);
+            }
+            .ant-input {
+              color: #fff;
+              background-color: transparent;
+              border: none;
+              span {
+                color: #fff;
+              }
+              .ant-calendar-picker-icon:after {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+      .item {
+        background: #151b4c;
+        width: 100%;
+        margin-top: 20px;
+        box-sizing: border-box;
+        padding: 10px 60px;
+      }
+    }
   }
 }

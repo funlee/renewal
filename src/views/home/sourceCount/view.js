@@ -62,19 +62,16 @@ class SourceCount extends Component {
   }
 }
 
-// SelectorTime.propTypes = {
-//   handleSetFiltime: PropTypes.func.isRequired,
-//   handleSetSelftime: PropTypes.func.isRequired
-// };
+SourceCount.propTypes = {
+  handleGetData: PropTypes.func.isRequired,
+  list: PropTypes.array.isRequired,
+};
 
 const mapStateToProps = (state) => {
   const list = [];
   const {data = []} = state.sourceCount;
   source.forEach(ls => {
-    let count = 0;
-    data.forEach(d => {
-      count = d.source === ls.source ? d.count : 0
-    })
+    let count = data.length > 0 ? data.filter(d => d.source === ls.source)[0].count : 0;
     list.push({
       ...ls,
       count

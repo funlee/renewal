@@ -20,17 +20,13 @@ class App extends Component {
             <nav>
               <div className="father-nav">
                 <NavLink to="/home">首页</NavLink>
-                <div className="child-nav">
+                {/* <div className="child-nav">
                   <NavLink exact to="/home/collect">信息汇总</NavLink>
                   <NavLink exact to="/home/project">情报产品</NavLink>
-                </div>
+                </div> */}
               </div>
               <div className="father-nav">
                 <NavLink to="/share">共享检索</NavLink>
-                <div className="child-nav">
-                  <NavLink exact to="/share/search">检索查询</NavLink>
-                  <NavLink exact to="/share/topic">专题监测</NavLink>
-                </div>
               </div>
               <div className="father-nav"><NavLink to="/null-1">智能分析</NavLink> </div>
               <div className="father-nav"><NavLink to="/null-2">应用分发</NavLink> </div>
